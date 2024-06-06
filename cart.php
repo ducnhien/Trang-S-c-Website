@@ -81,7 +81,7 @@ $grand_total = 0;
                             <input type="number" name="qty" class="qty" min="1" max="99" value="<?= $fetch_cart['quantity']; ?>" maxlength="2">
                             <button type="submit" class="fas fa-edit" name="update_qty"></button>
                         </div>
-                        <div class="sub-total"> sub total : <span><?= $sub_total = ($fetch_cart['price'] * $fetch_cart['quantity']); ?> VND</span> </div>
+                        <div class="sub-total"> sub total : <span><?= $sub_total = ($fetch_cart['price'] * $fetch_cart['quantity']); ?> VNĐ</span> </div>
                     </form>
             <?php
                     $grand_total += $sub_total;
@@ -94,7 +94,7 @@ $grand_total = 0;
         </div>
 
         <div class="cart-total">
-            <p>tổng số tiền : <span><?= $grand_total; ?> VND</span></p>
+            <p>tổng số tiền : <span><?= $grand_total; ?> VNĐ</span></p>
             <a href="checkout.php" class="btn <?= ($grand_total > 1) ? '' : 'disabled'; ?>">tiến hành kiểm tra</a>
         </div>
 
